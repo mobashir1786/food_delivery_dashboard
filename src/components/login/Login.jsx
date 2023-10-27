@@ -8,8 +8,8 @@ const Login = () => {
         event.preventDefault();
         const email = event.target[0].value;
         const password = event.target[1].value;
-
-        axios.post("", { email: email, password: password })
+        console.log(email, password);
+        axios.post("http://ec2-3-7-9-101.ap-south-1.compute.amazonaws.com/app/saveUserDataloginSignUpAPI/api/login", { email, password })
             .then(res => {
                 console.log(res)
             }).catch(e => {
@@ -23,7 +23,7 @@ const Login = () => {
                 <form onSubmit={handleLogin} className='loginbox'>
                     <input placeholder='Email' type="email" required />
                     <input placeholder='Password' type="password" required />
-                    <button type="submit" >Agree & Sign-up</button>
+                    <button type="submit" >Sign In</button>
                     <Link to="/forget" className='forget'>
                         <div className='changepassword'>
                             <hr className='leftline' /><span>Change or Forget Password</span><hr className='rightline' />
