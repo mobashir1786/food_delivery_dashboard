@@ -8,14 +8,14 @@ const Login = () => {
         event.preventDefault();
         const email = event.target[0].value;
         const password = event.target[1].value;
-        console.log(email, password);
+        // console.log(email, password);
         axios.post("http://ec2-3-7-9-101.ap-south-1.compute.amazonaws.com/app/saveUserDataloginSignUpAPI/api/login", { email, password })
             .then(res => {
                 document.cookie = "token=" + res.data.user.loginTokenID + "; expires=" + Date.now() + 1 * 24 * 60 * 60 * 1000;
                 window.location.href = 'http://localhost:3000/';
-                console.log(res.data.user.loginTokenID)
+                // console.log(res.data.user.loginTokenID)
             }).catch(e => {
-                console.log(e);
+                console.log(e.message);
             })
     }
     return (

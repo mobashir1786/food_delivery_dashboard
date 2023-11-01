@@ -6,7 +6,7 @@ import Home from './components/home/Home';
 
 function App() {
   let cookie = document.cookie;
-  console.log(cookie);
+  // console.log(cookie);
   return (
     <div className="App">
       <BrowserRouter>
