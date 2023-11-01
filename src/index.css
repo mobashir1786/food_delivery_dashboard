@@ -25,3 +25,7 @@ button {
   border: none;
   cursor: pointer;
 }
+
+.App {
+  width: 100%;
+}

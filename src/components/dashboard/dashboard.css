@@ -1,0 +1,16 @@
+.dashboard {
+    width: 90%;
+    padding: 0 5%;
+    height: 90vh;
+    background-color: aqua;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #4591E1;
+}
