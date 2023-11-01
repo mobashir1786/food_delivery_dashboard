@@ -22,3 +22,9 @@
 .menulistLogo {
     margin-right: 10px;
 }
+
+.logout {
+    color: rgb(249, 20, 20);
+    position: absolute;
+    bottom: 2%;
+}

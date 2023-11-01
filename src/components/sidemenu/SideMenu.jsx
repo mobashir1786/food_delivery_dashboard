@@ -3,35 +3,43 @@ import './sidemenu.css'
 import { Link } from 'react-router-dom';
 
 const SideMenu = (props) => {
+    const handleLogout = () => {
+        document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:01 GMT";
+        document.location.href = "http://localhost:3000/"
+    }
     return (
         <div className='sidemenu' style={{ display: props.visible.side }}>
             <Link to="/" className="menulist">
                 <div className="material-symbols-outlined menulistLogo">dashboard</div>
                 <div className="menulistName">Dashboard</div>
             </Link>
-            <div className="menulist">
+            <Link className="menulist">
                 <div className="material-symbols-outlined menulistLogo">menu_book</div>
                 <div className="menulistName">Food List</div>
-            </div>
-            <div className="menulist">
+            </Link>
+            <Link className="menulist">
                 <div className="material-symbols-outlined menulistLogo">order_approve</div>
                 <div className="menulistName">Order List</div>
-            </div>
-            <div className="menulist">
+            </Link>
+            <Link className="menulist">
                 <div className="material-symbols-outlined menulistLogo">shadow_add</div>
                 <div className="menulistName">Add New Food </div>
-            </div>
-            <div className="menulist">
+            </Link>
+            <Link className="menulist">
                 <div className="material-symbols-outlined menulistLogo">payments</div>
                 <div className="menulistName">Invoice List</div>
-            </div>
-            <div className="menulist">
+            </Link>
+            <Link className="menulist">
                 <div className="material-symbols-outlined menulistLogo">dashboard</div>
                 <div className="menulistName">Dashboard</div>
-            </div>
-            <div className="menulist">
+            </Link>
+            <Link className="menulist">
                 <div className="material-symbols-outlined menulistLogo">dashboard</div>
                 <div className="menulistName">Dashboard</div>
+            </Link>
+            <div className="logout menulist" onClick={handleLogout}>
+                <div className="material-symbols-outlined menulistLogo">logout</div>
+                <div className="menulistName">Logout</div>
             </div>
         </div>
     )
