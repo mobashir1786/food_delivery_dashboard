@@ -13,27 +13,27 @@ const SideMenu = (props) => {
                 <div className="material-symbols-outlined menulistLogo">dashboard</div>
                 <div className="menulistName">Dashboard</div>
             </Link>
-            <Link className="menulist">
+            <Link to="/foodlist" className="menulist">
                 <div className="material-symbols-outlined menulistLogo">menu_book</div>
                 <div className="menulistName">Food List</div>
             </Link>
-            <Link className="menulist">
+            <Link to="/orderlist" className="menulist">
                 <div className="material-symbols-outlined menulistLogo">order_approve</div>
                 <div className="menulistName">Order List</div>
             </Link>
-            <Link className="menulist">
+            <Link to="/addnewfood" className="menulist">
                 <div className="material-symbols-outlined menulistLogo">shadow_add</div>
                 <div className="menulistName">Add New Food </div>
             </Link>
-            <Link className="menulist">
+            <Link to="/invoicelist" className="menulist">
                 <div className="material-symbols-outlined menulistLogo">payments</div>
                 <div className="menulistName">Invoice List</div>
             </Link>
-            <Link className="menulist">
+            <Link to="/" className="menulist">
                 <div className="material-symbols-outlined menulistLogo">dashboard</div>
                 <div className="menulistName">Dashboard</div>
             </Link>
-            <Link className="menulist">
+            <Link to="/" className="menulist">
                 <div className="material-symbols-outlined menulistLogo">dashboard</div>
                 <div className="menulistName">Dashboard</div>
             </Link>
